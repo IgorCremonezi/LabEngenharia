@@ -26,7 +26,9 @@ document.getElementById('formulario').addEventListener('submit', function (e) {
     if (novoItem !== "") {
         itensArray.push(novoItem);
 
-        itensArray.sort();
+        itensArray.sort(function(a, b) {
+            return a.toLowerCase().localeCompare(b.toLowerCase());
+        });
 
         document.getElementById('item').value = "";
 
