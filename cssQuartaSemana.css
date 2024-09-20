@@ -1,0 +1,147 @@
+body, input, button, label {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+h1 {
+    font-size: 26px;
+    color: #000;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: rgba(34, 34, 34, 0.9);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="radio"],
+input[type="text"] {
+    font-size: 12px;
+    color: #999;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    width: auto;
+}
+
+button {
+    font-size: 12px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 50px;
+    justify-content: center;
+}
+
+button:first-child {
+    margin-left: 500px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#ladoemail, #ladotelefone, #ladoarea {
+    display: flex;
+}
+
+#ladoemail div:first-child {
+    margin-right: 100px;
+    width: 85%;
+}
+
+#ladotelefone div:first-child {
+    margin-right: 100px;
+    width: 50%;
+}
+
+#ladotelefone div:nth-child(2) {
+    margin-right: 100px;
+    width: 50%;
+}
+
+#ladotelefone div:last-child {
+    margin-top: 10px;
+}
+
+.ratioselection {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#ratios div:first-child{
+    margin-left: 16px;
+}
+
+#ladoarea {
+    position: relative;
+}
+
+#ladoarea div:first-child {
+    position: absolute;
+    width: 40%;
+}
+
+#ladoarea div:first-child input {
+    margin-top: 20px;
+    margin-left: -25px;
+}
+
+#ladoarea div:nth-child(3) {
+    margin-left: 600px;
+}
+
+#ladoarea div:nth-child(3) input {
+    position: absolute;
+    width: 53%;
+    margin-top: 20px;
+}
+
+#ladoarea div:nth-child(2) {
+    position: absolute;
+    width: 40%;
+}
+
+#ladoarea div:last-child {
+    margin-left: 600px;
+    width: 55%;
+}
+
+#alunoFields1 {
+    display: none;
+}
+
+#alunoFields2 {
+    display: none;
+}
+
+#lattes-group {
+    margin-top: 30px;
+}
