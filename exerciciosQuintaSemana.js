@@ -10,7 +10,7 @@ class Tarefa {
     }
   
     detalhes() {
-      return `Nome: ${this.nome}\nDescrição: ${this.descricao}\nStatus: ${this.status}`;
+      return `Nome: ${this.nome}<br>Descrição: ${this.descricao}<br>Status: ${this.status}`;
     }
   }
   
@@ -33,9 +33,9 @@ class Tarefa {
         li.innerHTML = `
           ${tarefa.nome}
           <div>
-            <button onclick="gerenciador.visualizarDetalhes(${index})">Detalhes</button>
-            <button onclick="gerenciador.marcarComoConcluida(${index})">Concluir</button>
-            <button onclick="gerenciador.removerTarefa(${index})">Remover</button>
+            <button class="btn btn-info" onclick="gerenciador.visualizarDetalhes(${index})">Detalhes</button>
+            <button class="btn btn-secondary" onclick="gerenciador.marcarComoConcluida(${index})">Concluir</button>
+            <button class="btn btn-danger" onclick="gerenciador.removerTarefa(${index})">Remover</button>
           </div>
         `;
         lista.appendChild(li);
@@ -55,7 +55,7 @@ class Tarefa {
     visualizarDetalhes(index) {
       const modal = document.getElementById('modal');
       const detalhesTarefa = document.getElementById('detalhesTarefa');
-      detalhesTarefa.textContent = this._tarefas[index].detalhes();
+      detalhesTarefa.innerHTML = this._tarefas[index].detalhes();
       modal.style.display = 'block';
     }
   }
